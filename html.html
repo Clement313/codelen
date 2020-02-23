@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+	<link rel="stylesheet" type="text/css" href="clindex.css">
+	<title>HTML || Start your Journey</title>
+</head>
+<body>
+
+    <ul>
+        <li>
+            <a class="active" href="#home">Home</a>
+            <a href="clindex.html">Learn HTML</a>
+            <a href="#css">Learn CSS</a>
+            <a href="#js">Learn JAVASCRIPT</a>
+            <a href="#jobs">Tech Jobs</a>
+            <a href="#Premium">Premium</a>
+
+        </li>
+    </ul><br> <br> <br><br>
+
+        <img src="codelogo.png" style="width:16%" align="content">
+
+
+    <!-- Using Text Editors			 -->
+<div>
+	 <h3>
+	 	Selecting a Text Editor
+	 </h3>
+     <p>
+       While you can write and edit HTML with any text editor, we highly suggest using the <strong>Atom text editor</strong> (Fun fact: the editor is actually written using HTML!) It supports pretty much every operating system and you'll love how simple and pretty it looks. Of course, feel free to use whatever text editor you are already comfortable with. <br>
+       Other text editors include but not limited to: <strong>Sublime Text</strong>, <strong>Bracket</strong>, <strong>Visual Studio Code</strong> among others.
+     </p>
+     <img src="atom-text-editor.png">
+</div>
+        <!-- Hello World -->
+<div>
+    <h2 class="heading">
+        Hello World
+    </h2>
+    <p>Create a brand new file in your editor, and type this in: <strong>Hello World!</strong></p><br>
+    Save it as index.html, and make sure you save it with the .html extension instead of .txt. Navigate to where you saved the file and open it with your browser of choice <strong>(Preferably Chrome Browser)</strong>. If done correctly, you should see something like this:<br>
+<img src="hello-world.png">
+<p>
+  If so, congratulations, you have written your very first HTML document! This lesson was just to get you set up. You are now ready to proceed with the next lesson, where we'll be diving into HTML itself!  Weldone lets move on...
+</p>
+</div>
+
+<div>
+   <h2 class="heading">
+        Using Tags, Attribute, and Elements
+    </h2>
+    <p>
+        In our very first lesson, we got set up with a text editor and made a basic HTML document. We, however, didn't actually use any HTML tags just yet as it was entirely plain text. <br>
+
+        In this class, we'll start writing true HTML and get familiar with things like tags, elements and attributes.
+
+    </p>
+</div>
+<div>
+    <h2> DOCTYPE</h2>
+    <p>
+       Before we dive into HTML, it's important to know what <strong>DOCTYPE</strong> is. This declaration appears at the very top of every HTML document and it tells the browser that what follows next is <strong>HTML 5</strong>, as opposed to an earlier version of HTML. <br><br>
+        While it is not technically needed, it is good practice to include it, and it looks like this:<br><br>
+        <div>
+            <pre>
+                <code>
+                    &lt;!DOCTYPE html&gt;
+                </code>
+            </pre>
+        </div>
+    </p>
+</div>
+<div>
+    <h2>
+        A basic HTML Page
+    </h2>
+    <p>
+      Creating a real HTML document requires the use of HTML tags. HTML tags are used to describe and give meaning to whatever content is inside the tag, which gives the page structure.  <br><br>
+      Let's start with a very basic HTML document. <br> <br>
+      <pre>
+          <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt
+        &lt;head&gt
+            &lt;title&gtLook at this title!&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt
+            &lt;h1&gtI am very important!&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+          </code>
+      </pre>
+      <p>
+        Ignoring the <code>DOCTYPE</code> declaration for a second, you can see that the <code>html</code> tag encompasses the entire document. This tells the browser "hey, everything between these two tags is an HTML document, so please render it". <br> <br>
+          After that, pretty much every website you browse will then contain two more tags, a <code>head</code> and <code>body</code> tag.
+      </p>
+</div>
+<div>
+    <h2>
+       Head Tag
+    </h2>
+    <p>
+      The head tag allows you to add metadeta describing your HTML page. Metadata is data that describes other pieces of data. The metadata you provide is useful for the browser to further understand what your page is about. <br>
+      Things that are typically included in the head tag include the page title you see at the top, links to any external files like CSS and JavaScript files, a description for the page, adding a favicon, and much more. <br>
+      Setting the Page Title:
+    </p>
+    <div>
+        &lt;title&gt;Using Tags, Attributes and Elements&lt;/title&gt;
+    </div> <br>
+    <h2>Adding a description:</h2>
+</div> <br>
+<div>
+    <p><code>&lt;meta name="description" content="Learn about HTML!"&gt;</code></p>
+</div> <br>
+<div>
+    <h2>Adding a Favicon:</h2>><br>
+    <div><code> &lt;link rel="icon" href="/images/favicons/favicon.ico"&gt;</code></div>
+</div>
+<h2>Setting an Anchor for the page:</h2><br>
+<div>
+ <code>&lt;meta name="author" content="John Cena"&gt;</code>
+</div><br>
+<h2>Body Tag </h2>
+The body tag, on the other hand, is where the content you will see displayed on your screen resides. You need to put anything you want actually rendered on the page between the opening and closing body tags. <br>
+ In an earlier example here, you saw a header with some text in between. The <code>h1</code> tag stands for header1, and is reserved for the most important header. There are many others like <code>h2</code>, <code>h3</code>, <code>h4</code>, and so on.
+</div>
+<p>Save this file and open it in your browser. <em>This is how it should look like:</em></p><br>
+<img src="demo.png">
+<p>Take a brief glance at the code once more. <br>
+    <div>
+    <pre>
+          <code>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt
+        &lt;head&gt
+            &lt;title&gtLook at this title!&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt
+            &lt;h1&gtI am very important!&lt;/h1&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+          </code>
+      </pre>
+    </div>
+
+</p><br>
+<h2>
+    Tags
+</h2>
+<div>
+    <p>
+      Using most HTML tags require an opening tag and a closing tag, with whatever is in between the tags being the content. Closing tags have a slash right before the name of the tag, while opening ones don't. <br>
+      <div><code>&lt;tag&gt;The opening tag is on the left, closing tag on the right.&lt;/tag&gt;</code></div><br>
+       There are, however, tags that do not need a closing tag, and can close themselves (self-enclosing). Self-enclosing tags are cases where there is no content in between. <br><br>
+       <code>&lt;img src="demo.jpg"&gt;</code>
+
+    </p>
+</div>
+<h2>
+    Elements
+</h2>
+<div>
+    <p>
+      So you already know what tags are, so what's an <strong>element</strong>? The difference between the two is simpler than you think. In the case of:
+      <div><br>
+          <code>&lt;title&gt;This is a title&lt;/title&gt;</code>
+      </div> <br>
+      The tag is <strong>title</strong> and the element is the two title tags <em>plus everything inside it</em>. In other words, this is literally the entire title element:
+      <div><br>
+          <code>&lt;title&gt;This is a title&lt;/title&gt;</code><br><br>
+      </div>
+      Simple, right? This will become an important distinction as you become familiar with HTML. A tag is what surrounds content but the tags plus the content inside is an element.
+
+    </p>
+</div>
+<h2>
+    Attributes
+</h2>
+<div>
+    <p>
+        In addition to tags, HTML has another way of helping you give meaning to your content. And that gives birth to <strong>attributes.</strong><br><br>
+        Attributes describe the tags that they are placed inside of . The syntaxnfor attributes is extremely simple.
+        <div>
+            <code>&lt;h1 class="special"&gt;I am a special heading!&lt;/h1&gt;</code>
+        </div><br>
+        In this example, class is the attribute, and special is the value. Attributes describe tags because now this h1 tag might act or look differently than another h1 tag with another class attribute, or no class attribute at all. <br><br>
+       The following is a generic example of how an attribute with a value can be applied to a tag. <br><br>
+       <div>
+           <code>&lt;tag attribute="value"&gt;I am a generic example.&lt;/tag&gt;</code>
+       </div>
+
+     </p>
+</div>
+
+<h2> Class</h2>
+<div>
+    <p>
+     class is an important attribute in HTML. it can be applied to pretty much every tag, which then makes it easy to apply sytles to with CSS. The value of this attribute can be repeated as many times as want, for example, like this: <br>
+     <div>
+         <code>&lt;p class="red"&gt;I am red&lt;/p&gt;<br>&lt;p class="red"&gt;I am also red&lt;/p&gt;
+     </div>
+    </p>
+</div>
+
+<h2>ID</h2>
+<div>
+    <p>
+      Another important attribute in HTML is <code>id</code>. On a valid HTML page, the values of this attribute must all be unique. For example, if you give a tag an ID of <code>first</code>, no other tag may have that same ID.
+        <br>
+    <div>
+    <code>
+    &lt;p id="first"&gt;I am first&lt;/p&gt;<br>
+    &lt;p id="second"&gt;I am second&lt;/p&gt;
+    </code>
+    </div><br><br>
+    Now that you're more familiar with HTML tags, attributes and elements, let's dive more into working with content! Weldone on your endevour so far. you are great! Move on with courage!
+
+</div>
+<h2>Comment</h2>
+<div>
+    <p>
+       Sometimes while writing HTML, you want to leave a comment, either for yourself or for another person. Keep in mind that, being comments, they will not be rendered at all and will in fact be completely ignored by the browser. You can think of comments as just little notes that do not affect anything else. <br> <br>
+       You can achieve this in HTML like this:
+       <div>
+       	<pre>
+					<code>
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+		&lt;head&gt;
+			&lt;title&gt;Comments&lt;/title&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+			This is content.
+			&lt;!-- This is a comment. --&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
+					</code>
+				</pre>
+       </div>
+		 </p>
+</div>
+<div>
+	<p>
+You can also comment in the middle of a sentence, or have comments that span multiple lines, like so:
+<div>
+	<pre>
+<code>
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+		&lt;head&gt;
+		&lt;title&gt;Multi-line Comments&lt;/title&gt;
+		&lt;/head&gt;
+			&lt;body&gt;
+			This is &lt;!-- Comment inside. --&gt; some content.
+			&lt;!--
+			I am
+			a multiple line
+			comment --&gt;
+			&lt;/body&gt;
+		&lt;/html&gt;
+</code>
+	</pre>
+</div>
+Comments are useful depending on how you use them, but they are completely optional.
+
+	</p>
+</div>
+<h3>Emphasis</h3><br>
+<p>
+Adding emphasis to content is a great way to highlight that selection over the surrounding content. HTML gives you two ways to give <strong>emphasis</strong> to content. <br><br>
+You have the <code>em</code> tag, which stands for <strong>emphasis</strong>, and the <code>strong</code> tag, which is to give content a <strong>strong importance</strong>. <br><br>
+Load this up in browser to see for yourself:
+<div>
+	<pre>
+<code>
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Emphasis&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+	 I &lt;em&gt;really&lt;/em&gt; think that HTML is &lt;strong&gt;awesome!&lt;/strong&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+</code>
+</pre> <br><br>
+<img src="emphasis.png" alt="emphasis illustration">
+</div>
+</p><br>
+<div>
+	<h3><strong>Multiline Content</strong> </h3><br>
+	<p>
+Working with multiline content in HTML is pretty easy, but it is not like simply pressing enter on a Word document. For example, this will not give you the expected outcome:
+<div>
+	<pre>
+<code>
+	&lt;!DOCTYPE html&gt;
+		&lt;html&gt;
+			<head>
+				&lt;title&gt;Multiline Content&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+				I am on the first line
+				and I am on the second line.
+			&lt;/body&gt;
+		&lt;/html&gt;
+
+</code>
+	</pre>
+</div>
+Don't believe me? Try it for yourself. They will render <strong>on the same line!</strong> <br> <br>
+<img src="multiline-content.png" alt=""><br>
+....But why is it like that?  This takes us to how we can correct things. Let's proceed! Don't give up.
+	</p>
+
+</div>
+<h2>Paragraph Tags</h2>
+<div>
+ <p>
+	 The reason for this is the way HTML is eventually parsed by the browser. With no tags separating the two lines, the content is essentially treated as being together, and are thus rendered together, on the same line. <br><br>
+ 	To get the desired effect in this case, you will need to use the paragraph tag, or <code>p</code> tag. <br> <br>
+
+	<pre>
+	<code>
+		&lt;!DOCTYPE html&gt;
+			&lt;html&gt;
+			&lt;head&gt;
+			&lt;title&gt;Paragraph Tags&lt;/title&gt;
+			&lt;/head&gt;
+			&lt;body&gt;
+			&lt;p&gt;I am on the first line&lt;/p&gt;
+			&lt;p&gt;and I am on the second line.&lt;/p&gt;
+			&lt;/body&gt;
+			&lt;/html&gt;
+	</code>
+</pre><br>
+<img src="paragraph-tags.png" alt="ptag"><br>
+<p>
+	There we go!<br> <br>
+
+With each line being encompassed by their own paragraph tag, the browser treats them as separate pieces of content and renders them as such. Paragraph tags are used for writing, well, paragraphs, which each paragraph being neatly separated from each other as you would expect.
+</p>
+
+</p><br>
+<h2>Line Break Tags</h2>
+<div>
+	There is another way to accomplish a similar effect as above. It is usually discouraged unless in very specific cases, but that case might come up for you. <br><br>
+	If you use a <strong>line break </strong>tag, or <code>br</code> tag, you can tell the browser to start a new line and render the rest of the content there instead. <br><br>
+	Using a line break tag, we get this:
+	<div>
+		<pre>
+			<code>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+ &lt;title&gt;Line Break Tags&lt;/title&gt;
+ &lt;/head&gt;
+	&lt;body&gt;
+		I am on the first line&lt;br&gt;
+		and I am on the second line.
+	&lt;/body&gt;
+&lt;/html&gt;
+			</code>
+		</pre>
+	</div>
+	<img src="line-break-tags.png" alt=""><br>
+	Our content renders on seperate lines, and we are super excited! wow this is pretty cool you say right? Up next, let's learn how you can add <strong>page headings</strong> to your page!  {<em>code couragously</em>}...
+</div>
+ <a href="heading.html"><button>Next Lesson</button></a> 
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>
